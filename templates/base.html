@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ibelefu Community</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Ibelefu Community</h1>
+            <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">The Land of Ibelefu Lisoku-Rasusi</a>
+                        <ul>
+                            <li><a href="/history">History of Ibelefun</a></li>
+                            <li><a href="/developments">Ibelefun's Developments</a></li>
+                            <li><a href="/past_rulers">Past Rulers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/baale_profile">Monarch of Ibelefun</a>
+                        <ul>
+                            <li><a href="/baale_profile">Monarch's Profile</a></li>
+                            <li><a href="/baale_palace">Monarch's Palace</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/chiefs">Ibelefun Chiefs</a>
+                        <ul>
+                            <li><a href="/chiefs">Chiefs</a></li>
+                            <li><a href="/honorary_chiefs">Honorary Chiefs</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/news_events">News & Events</a>
+                        <ul>
+                            <li><a href="/testimonials">Testimonials</a></li>
+                            <li><a href="/land_rectification">Land Rectification</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/cda">Community Development Association</a></li>
+                    <li><a href="/contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 Ibelefu Community. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <h2>Meet the Chiefs</h2>
+        <ul>
+            {% for chief in chiefs %}
+            <li>
+                <h3>{{ chief.name }} - {{ chief.title }}</h3>
+                <p>{{ chief.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
