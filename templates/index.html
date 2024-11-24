@@ -2,7 +2,23 @@
 
 {% block content %}
     <section>
-        <h2>About Our Community</h2>
-        <p>Our community is rich in tradition and heritage, with a structured leadership of the king and the chiefs.</p>
+        <!-- Add the picture at the top -->
+        <img src="{{ url_for('static', filename='img1.PNG') }}" alt="Community Image" style="width: 100%; height: auto; display: block;">
+
+        <!-- Create a container for three divisions -->
+        <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <h2>About Our Community</h2>
+                <p>Our community is rich in tradition and heritage, with a structured leadership of the king and the chiefs.</p>
+            </div>
+            <div style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <h2>Our Vision</h2>
+                <p>We aim to preserve our culture and foster unity within the community while embracing modern values.</p>
+            </div>
+            <div style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <h2>Our Activities</h2>
+                <p>From festivals to community meetings, we celebrate our heritage and discuss important issues that matter to us.</p>
+            </div>
+        </div>
     </section>
 {% endblock %}
