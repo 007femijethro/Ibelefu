@@ -38,9 +38,9 @@ def baale_palace():
 def chiefs():
     return render_template('chiefs.html')
 
-@app.route('/chiefs/honorary')
-def honorary_chiefs():
-    return render_template('honorary_chiefs.html')
+@app.route('/chiefshons')
+def chiefshons():
+    return render_template('chiefshons.html')
 
 @app.route('/news')
 def news():
@@ -59,4 +59,4 @@ def contacts():
     return render_template('contacts.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run() 

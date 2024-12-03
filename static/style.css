@@ -85,6 +85,14 @@ nav ul li a:hover {
     color: #ffcdd2;
 }
 
+/* Add styles for non-clickable "Ibelefun Chiefs" */
+nav ul li > span {
+    color: #fff; /* Same color as links */
+    font-weight: bold;
+    cursor: default; /* Prevent pointer cursor on hover */
+    text-decoration: none; /* Remove underline */
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
     #menu-toggle {
