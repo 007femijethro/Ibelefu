@@ -1,15 +1,67 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <section>
-        <h2>Meet the Chiefs</h2>
-        <ul>
-            {% for chief in chiefs %}
-            <li>
-                <h3>{{ chief.name }} - {{ chief.title }}</h3>
-                <p>{{ chief.description }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
+<section style="padding: 40px; background: linear-gradient(to bottom, #fce4ec, #f8bbd0);">
+    <h2 style="text-align: center; color: #d81b60; font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 30px;">
+        Meet The Monarch of Ibelefu
+    </h2>
+    <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;">
+        <!-- Monarch's Image -->
+        <img src="static/image/baale.jpg" alt="Pastor Abiodun Oyewoga" style="
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;">
+
+        <!-- Monarch's Biography -->
+        <div style="max-width: 800px; font-family: 'Poppins', sans-serif; font-size: 1rem; color: #333; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #ad1457; font-size: 1.5rem; margin-bottom: 15px;">Biography: His Royal Majesty, Pastor Abiodun Oyewoga</h3>
+            <p><strong>Age:</strong> 66</p>
+            <p><strong>Title:</strong> The Baale of Ibelefu Lisoku-Rasusi Kingdom</p>
+            <p style="line-height: 1.6;">
+                His Royal Majesty, Pastor Abiodun Oyewoga, is the esteemed Baale of Ibelefu Lisoku-Rasusi Kingdom. At 66 years old, 
+                he continues to lead his people with a profound sense of duty, humility, and a deep-rooted commitment to the spiritual 
+                and cultural growth of the kingdom.
+            </p>
+
+            <h4 style="color: #ad1457; margin-top: 20px;">Early Life</h4>
+            <p style="line-height: 1.6;">
+                Born in 1958, Pastor Abiodun Oyewoga grew up in a family that instilled strong values of leadership and service. His early years 
+                were shaped by an unwavering faith in God and a passion for uplifting others. A gifted student, he excelled in his studies and 
+                later pursued theological training, becoming a pastor dedicated to guiding his community in both faith and governance.
+            </p>
+
+            <h4 style="color: #ad1457; margin-top: 20px;">Leadership Journey</h4>
+            <p style="line-height: 1.6;">
+                Pastor Oyewoga was appointed Baale of Ibelefu Lisoku-Rasusi Kingdom in recognition of his wisdom, integrity, and unifying presence. 
+                His coronation marked a new chapter for the kingdom, celebrated as the dawn of a spiritually enriched and culturally vibrant era.
+            </p>
+
+            <h4 style="color: #ad1457; margin-top: 20px;">Achievements</h4>
+            <ul style="line-height: 1.6; text-align: left;">
+                <li><strong>Spiritual Leadership:</strong> As both a pastor and a Baale, Pastor Oyewoga has seamlessly blended spiritual guidance with traditional leadership, fostering peace and unity among his people.</li>
+                <li><strong>Community Development:</strong> He has spearheaded initiatives to improve education, healthcare, and infrastructure in the kingdom, ensuring better living standards for all.</li>
+                <li><strong>Cultural Revitalization:</strong> Under his leadership, the kingdom has embraced its rich traditions, with annual festivals and cultural events that celebrate the heritage of Ibelefu Lisoku-Rasusi.</li>
+                <li><strong>Youth Empowerment:</strong> Pastor Oyewoga is a strong advocate for youth education and mentorship programs, equipping the next generation with the tools to succeed.</li>
+            </ul>
+
+            <h4 style="color: #ad1457; margin-top: 20px;">Present Leadership</h4>
+            <p style="line-height: 1.6;">
+                Today, Pastor Abiodun Oyewoga remains an inspiring figure in Ibelefu Lisoku-Rasusi Kingdom. His deep connection with his people, 
+                combined with his faith-driven leadership, has earned him immense respect and admiration. He is known for his wisdom, his ability 
+                to mediate conflicts, and his vision for a harmonious and prosperous kingdom.
+            </p>
+            <p style="line-height: 1.6;">
+                Pastor Oyewoga continues to serve as a living symbol of hope and progress, uniting tradition with modernity to create a brighter 
+                future for his beloved community.
+            </p>
+        </div>
+    </div>
+</section>
 {% endblock %}

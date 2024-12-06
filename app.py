@@ -22,11 +22,7 @@ def developments():
 def past_rulers():
     return render_template('past_rulers.html')
 
-@app.route('/baale')
-def baale():
-    return render_template('baale.html')
-
-@app.route('/baale/profile')
+@app.route('/baale_profile')
 def baale_profile():
     return render_template('baale_profile.html')
 
