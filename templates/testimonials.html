@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="testimonials-container">
+    <h1 class="page-title">Testimonials</h1>
+    <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="Person 1" class="testimonial-img">
+        <div class="testimonial-text">
+            <h2 class="testimonial-name">Jane Doe</h2>
+            <p>"This community has been incredibly supportive. The events are so well-organized, and I feel truly valued here!"</p>
+        </div>
+    </div>
+    <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="Person 2" class="testimonial-img">
+        <div class="testimonial-text">
+            <h2 class="testimonial-name">John Smith</h2>
+            <p>"Being part of this community has enriched my life. The friendships and connections I've made are priceless."</p>
+        </div>
+    </div>
+    <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="Person 3" class="testimonial-img">
+        <div class="testimonial-text">
+            <h2 class="testimonial-name">Sarah Lee</h2>
+            <p>"A vibrant and welcoming community where everyone is valued. I love being part of it!"</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<style>
+    /* Container Styling */
+    .testimonials-container {
+        background: linear-gradient(135deg, #ffe6f2, #ffd6eb);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        margin: 30px auto;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Title Styling */
+    .page-title {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        color: #ff3366;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 4px rgba(255, 51, 102, 0.5);
+    }
+
+    /* Testimonial Cards */
+    .testimonial {
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image Styling */
+    .testimonial-img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin-right: 20px;
+        border: 3px solid #ff6699;
+        transition: transform 0.3s ease;
+    }
+
+    .testimonial:hover .testimonial-img {
+        transform: scale(1.1);
+    }
+
+    /* Text Styling */
+    .testimonial-text {
+        font-family: 'Poppins', sans-serif;
+        color: #555;
+    }
+
+    .testimonial-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ff3366;
+        margin-bottom: 10px;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

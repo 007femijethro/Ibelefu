@@ -18,7 +18,7 @@ def history():
 def developments():
     return render_template('developments.html')
 
-@app.route('/land/past_rulers')
+@app.route('/past_rulers')
 def past_rulers():
     return render_template('past_rulers.html')
 
@@ -42,15 +42,11 @@ def chiefs():
 def chiefshons():
     return render_template('chiefshons.html')
 
-@app.route('/news')
-def news():
-    return render_template('news.html')
-
-@app.route('/news/testimonials')
+@app.route('/testimonials')
 def testimonials():
     return render_template('testimonials.html')
 
-@app.route('/news/land_rectification')
+@app.route('/land_rectification')
 def land_rectification():
     return render_template('land_rectification.html')
 
