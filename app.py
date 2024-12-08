@@ -46,6 +46,10 @@ def testimonials():
 def land_rectification():
     return render_template('land_rectification.html')
 
+@app.route('/cda')
+def cda():
+    return render_template('cda.html')
+
 @app.route('/contacts')
 def contacts():
     return render_template('contacts.html')

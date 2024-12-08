@@ -1,110 +1,83 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section style="padding: 40px; background: linear-gradient(to bottom, #fce4ec, #f8bbd0);">
-    <h2 style="text-align: center; color: #d81b60; font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 30px;">
-        Meet the Past Rulers
+<section style="padding: 40px; background: linear-gradient(to bottom, #fce4ec, #f8bbd0); font-family: 'Poppins', sans-serif;">
+    <h2 style="text-align: center; color: #d81b60; font-size: 2.5rem; margin-bottom: 30px;">
+        Some Chairmen/Chairpersons of Ibelefu CDAs
     </h2>
-    <div style="
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;">
 
-        <!-- Card Example -->
-        <div style="
-            background: white; 
-            border-radius: 10px; 
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-            overflow: hidden; 
-            transition: transform 0.3s; 
-            width: 250px; text-align: center;">
-            <img src="static/image/pr2.jpg" alt="Ruler Image" style="width: 100%; height: auto;">
-            <div style="padding: 15px;">
-                <h3 style="color: #ad1457; font-size: 1.2rem; font-family: 'Poppins', sans-serif; margin-bottom: 10px;">
-                    Late Pa Ganiyu Oyesanya
-                </h3>
-                <p style="font-size: 0.9rem; color: #555;">
-                    A renowned ruler from the 18th century known for his wisdom and leadership.
-                </p>
-            </div>
+    <div style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        text-align: center;
+        padding: 20px;
+    ">
+
+        <!-- Member 1 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/emiloju.jpg') }}" alt="Emiloju Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Engr. Forent Adetayo Opeoru</p>
+            <p style="color: #777;">EMILOJU IBELEFU CDA</p>
         </div>
 
-        <!-- Duplicate and Update for More Rulers -->
-        <div style="
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;">
+        <!-- Member 2 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/odan.jpg') }}" alt="Odan Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Mr. Thomas Abolade Adebisi</p>
+            <p style="color: #777;">ODAN IBELEFU CDA</p>
+        </div>
 
-            <!-- Card Example -->
-            <div style="
-                background: white; 
-                border-radius: 10px; 
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-                overflow: hidden; 
-                transition: transform 0.3s; 
-                width: 250px; text-align: center;">
-                <img src="static/image/pr1.jpg" alt="Ruler Image" style="width: 100%; height: auto;">
-                <div style="padding: 15px;">
-                    <h3 style="color: #ad1457; font-size: 1.2rem; font-family: 'Poppins', sans-serif; margin-bottom: 10px;">
-                         Pa Yinusa Oyesanya
-                    </h3>
-                    <p style="font-size: 0.9rem; color: #555;">
-                        A renowned ruler from the 18th century known for his wisdom and leadership.
-                    </p>
-                </div>
-            </div>
+        <!-- Member 3 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/akorede.jpg') }}" alt="Akorede Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Solami Olawale</p>
+            <p style="color: #777;">AKOREDE IBELEFU CDA</p>
+        </div>
 
-            <div style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                justify-content: center;">
+        <!-- Member 4 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/oma.jpg') }}" alt="Oma Olu Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Bashiru Dayo Bisara</p>
+            <p style="color: #777;">OMA OLU IBELEFU CDA</p>
+        </div>
 
-                <!-- Card Example -->
-                <div style="
-                    background: white; 
-                    border-radius: 10px; 
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-                    overflow: hidden; 
-                    transition: transform 0.3s; 
-                    width: 250px; text-align: center;">
-                    <img src="static/image/pr4.jpg" alt="Ruler Image" style="width: 100%; height: auto;">
-                    <div style="padding: 15px;">
-                        <h3 style="color: #ad1457; font-size: 1.2rem; font-family: 'Poppins', sans-serif; margin-bottom: 10px;">
-                            Pa Yekini Oyesanya
-                        </h3>
-                        <p style="font-size: 0.9rem; color: #555;">
-                            A renowned ruler known for his wisdom and leadership. He was the Olotu Ebi lbelefu  Lisoku.
-                        </p>
-                    </div>
-                </div>
+        <!-- Member 5 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/divine.jpg') }}" alt="Divine Grace Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Solape Olubukonla Temitope</p>
+            <p style="color: #777;">DIVINE GRACE IBELEFU CDA</p>
+        </div>
 
-                <div style="
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    justify-content: center;">
+        <!-- Member 6 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/orire.jpg') }}" alt="Orire Ntem Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Sodunke Oladeni Olukayode</p>
+            <p style="color: #777;">ORIRENTEM IBELEFU CDA</p>
+        </div>
 
-                    <!-- Card Example -->
-                    <div style="
-                        background: white; 
-                        border-radius: 10px; 
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-                        overflow: hidden; 
-                        transition: transform 0.3s; 
-                        width: 250px; text-align: center;">
-                        <img src="static/image/pr3.jpg" alt="Ruler Image" style="width: 100%; height: auto;">
-                        <div style="padding: 15px;">
-                            <h3 style="color: #ad1457; font-size: 1.2rem; font-family: 'Poppins', sans-serif; margin-bottom: 10px;">
-                                Late Pa Maroyi lsmaila Oyesanya
-                            </h3>
-                            <p style="font-size: 0.9rem; color: #555;">
-                                Papa was the former  Head of the Ibelefu Rasusi/ Lisoku Family.
-                            </p>
-                        </div>
-                    </div>
+        <!-- Member 7 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/ibenin.jpg') }}" alt="Ibenin Adun Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Abel Omon Godwin</p>
+            <p style="color: #777;">IBENIN ADUN IBELEFU CDA</p>
+        </div>
+
+        <!-- Member 8 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/ifeloju.jpg') }}" alt="Ifeloju Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Mrs. Ajoke Aina</p>
+            <p style="color: #777;">IFELOJU IBELEFU CDA</p>
+        </div>
+
+        <!-- Member 9 -->
+        <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); max-width: 200px;">
+            <img src="{{ url_for('static', filename='image/asanwaju.jpg') }}" alt="Asiwaju Ibelefu CDA" style="width: 100%; height: 180px; object-fit: cover; border-radius: 10px;">
+            <p style="margin-top: 10px; font-weight: bold; color: #333;">Prince Ince O. Udok</p>
+            <p style="color: #777;">ASIWUJU IBELEFU CDA</p>
+        </div>
+
     </div>
 </section>
 {% endblock %}
